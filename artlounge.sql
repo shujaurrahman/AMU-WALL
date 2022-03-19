@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 17, 2022 at 09:57 PM
+-- Generation Time: Mar 18, 2022 at 09:43 AM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -46,7 +46,9 @@ INSERT INTO `alluser` (`id`, `name`, `email`, `username`, `facultyno`, `password
 (4, 'Shuja Ur Rahman', 'rahman210@myamu.ac.in', 'rahman', '282934', '$2y$10$kC/rpkqifflg2geGATCwuu3wqEL.K5D2RnEhZV6OYFwwVaQ7ia8g6', NULL),
 (5, 'victoria', 'shazra@myamu.ac.in', 'shazra', '282934', '$2y$10$e9bda.gHCJi8fZVCk5GY8uE7y.jndnuEaZ9IB5o0McGSoF/bKCCyu', NULL),
 (6, 'Shazra', 'shazra@myamu.ac.in', 'shazraxyz', '282934', '$2y$10$YIuVoe18Mma9INk6hfPW6.WBQ5kyPAnTi.j1YRkXCaoXtdmJlDd6y', NULL),
-(7, 'Shuja Ur Rahman', 'Shujaurrehman210@myamu.ac.in', 'rahman23', '2019CAB009', '$2y$10$R0Momohdn28G2eSkT8uHouEEkIPGPECnSMjcPPZvgSoPO85A85vi2', NULL);
+(7, 'Shuja Ur Rahman', 'Shujaurrehman210@myamu.ac.in', 'rahman23', '2019CAB009', '$2y$10$R0Momohdn28G2eSkT8uHouEEkIPGPECnSMjcPPZvgSoPO85A85vi2', NULL),
+(8, 'Shuja Ur Rahman', 'hman210@myamu.ac.in', 'xhyasa', '282934', '$2y$10$KeCL.w/Rf5pw0Wgcy8J4UOQZNrn94TGetYyIb9WnbYcVCMoAW1erK', NULL),
+(9, 'shazra wali', 'shazra210@myamu.ac.in', 'shazra amu ', '282934', '$2y$10$R7MhFzb7xtT8t6RtNqTcWO6pf4kREYiUMJIfkfJkZ0Qpsm6ywT4nC', NULL);
 
 -- --------------------------------------------------------
 
@@ -74,7 +76,8 @@ INSERT INTO `usersfile` (`id`, `name`, `email`, `messgae`, `image`) VALUES
 (10, 'Shuja Ur Rahman', 'rahman210@myamu.ac.in', 'this is last image', '5.JPG'),
 (11, 'Shuja Ur Rahman', 'rahman210@myamu.ac.in', 'Hye, I am Kamran I did undergate at Aligarh Muslim University', 'IMG_1145.jpg'),
 (12, 'SHUJA UR RAHMAN', 'rahman210@myamu.ac.in', 'YE WALA BILKUL LAST HAI', '3.jpg'),
-(13, 'Shuja Ur Rahman', 'rahman210@myamu.ac.in', 'Github turtorial', '1.JPG');
+(13, 'Shuja Ur Rahman', 'rahman210@myamu.ac.in', 'Github turtorial', '1.JPG'),
+(14, 'Shuja Ur Rahman', 'shazra210@myamu.ac.in', 'this is a test', 'IMG_4826.JPG');
 
 --
 -- Indexes for dumped tables
@@ -101,13 +104,13 @@ ALTER TABLE `usersfile`
 -- AUTO_INCREMENT for table `alluser`
 --
 ALTER TABLE `alluser`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `usersfile`
 --
 ALTER TABLE `usersfile`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
