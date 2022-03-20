@@ -1,12 +1,22 @@
 <?php
 
-$boolALoggedIn = false;
+$boolLoggedIn = false;
 session_start();
 if(isset($_SESSION) and isset($_SESSION["email"])){  
 	 $email=$_SESSION["email"];
+   $id=$_SESSION['id'];
     $boolLoggedIn = true;  
     	
 }
+else{
+  $email="";
+  $id="";
+}
+
+echo $id;
+echo $email;
+
+header("Refresh: 10;");
 
 // database connection 
 
@@ -22,9 +32,24 @@ $conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
 $cardBlock="";
 $Fetch=false;
 
+//call this function at top of every page after login
+
+  
+
+  $sql = "SELECT * FROM `alluser` WHERE email = '$email' ";
+                  $result = mysqli_query($conn,$sql);
+                  $aff = mysqli_affected_rows($conn);
+                  if($aff==0){
+                            session_destroy();
+                            header("Location: ./signin/signin.php");
+                      //destroy_session , redirect, show message whatever you want.
+                  }
+                  else{
+                    //do nothing
+                  }
 
 // if($conn==True){
-//   echo"Connection is established"; }
+//   echo"Connection is established"; 
 
  
 
@@ -293,8 +318,9 @@ p {
    </div>
     <section class="main">
         
+         <h5>
         <?php
-        if($boolALoggedIn){
+        if($boolLoggedIn){
         echo "<h5>Welcome,$email";
         }
         ?></h5>

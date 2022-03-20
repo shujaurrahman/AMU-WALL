@@ -45,7 +45,8 @@ $boolUserPasswordMatch = false;
             $boolUserPasswordMatch = true;   
             echo var_dump($boolUserPasswordMatch);
             session_start();
-            $_SESSION["email"] = $email;    
+            $_SESSION["email"] = $email; 
+            $_SESSION['id']=$id;   
             header("location: ../index.php");
         }
         else{
