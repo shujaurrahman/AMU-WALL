@@ -78,7 +78,7 @@ Which is displayed as cards hanging on the wall, that's how it got its name.
 	<a href="https://github.com/shujaurrahman"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
 	<a href="https://www.linkedin.com/in/shuja-u-934230110/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
 	<a href="https://www.instagram.com/shujaurrahman_/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
-	<a href="https://twitter.com/s_rhmaan"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png" alt="Twitter"/></a>
+	<a href="https://twitter.com/s_rhmaan"><img src="https://icons8.com/icon/eeQY_dRSUIMV/twitter-circled" alt="Twitter"/></a>
   </p>
 
  Developed by<br />
