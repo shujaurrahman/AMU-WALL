@@ -1,24 +1,8 @@
 <?php
 
-$serverName="localhost";
-$userName="root";
-$passWord="";
-$dataBase="artlounge";
-$tableName="alluser";
+require_once '../partial/db.php';
 
-// $conn = mysqli_connect($serverName,$userName,$passWord);
 $conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
-
-
-// $sql = "CREATE DATABASE `$dataBase`";
-// $result = mysqli_query($conn,$sql);
-
-// if($conn==True){
-//   echo "Connection Success";
-// }
-// else{
-//   echo "connection was not succesfull";
-// }
 
 $userMssg="";
 $userDisplay="none";
