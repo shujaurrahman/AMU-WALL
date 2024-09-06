@@ -6,26 +6,14 @@ if(isset($_SESSION) and isset($_SESSION["email"])){
     $boolLoggedIn = true;  
     	header("location: ../index.php"); 
 }
-
-
-$serverName="localhost";
-$userName="root";
-$passWord="";
-$dataBase="artlounge";
-$tableName="alluser";
-$conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
-
-// if($conn==True){
-//   echo"Connection is established"; }
-
-
+require_once '../partial/db.php';
 $boolUserFound = false;
 $boolUserPasswordMatch = false;
 
    if($_SERVER["REQUEST_METHOD"]=="POST"){
     $email = $_POST["email"];
     $userPassword = $_POST["password"];
-    $sql = "SELECT * FROM `$tableName` where `email` = '$email';";
+    $sql = "SELECT * FROM `alluser` where `email` = '$email';";
     $result = mysqli_query($conn,$sql);
     $aff = mysqli_affected_rows($conn);
 
