@@ -9,11 +9,11 @@ if(isset($_SESSION) and isset($_SESSION["email"])){
 }
 
 
-$signin="/AMU WALL/signin/signin.php";
-$signup="/AMU WALL/signup/signup.php";
-$Home="/AMU WALL/index.php";
-$logout="/AMU WALL/logout.php";
-$post="/AMU WALL/main/uploaduser.php";
+$signin="/AMU-WALL/signin/signin.php";
+$signup="/AMU-WALL/signup/signup.php";
+$Home="/AMU-WALL/index.php";
+$logout="/AMU-WALL/logout.php";
+$post="/AMU-WALL/main/uploaduser.php";
 
 // Blocks condition for login logout
 
