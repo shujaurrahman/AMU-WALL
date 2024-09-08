@@ -8,19 +8,7 @@ if(isset($_SESSION) and isset($_SESSION["email"])){
   $email=$_SESSION["email"];
 }
 
-
-
-$serverName="localhost";
-$userName="root";
-$passWord="";
-$dataBase="artlounge";
-$tableName="usersfile";
-$conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
-
-// if($conn==True){
-//   echo"Connection is established"; }
-
-
+require_once '../partial/db.php';
 $boolUserFound = false;
 $boolUserPasswordMatch = false;
 
