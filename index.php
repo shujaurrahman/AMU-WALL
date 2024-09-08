@@ -19,16 +19,7 @@ echo $email;
 header("Refresh: 10;");
 
 // database connection 
-
-
-$serverName="localhost";
-$userName="root";
-$passWord="";
-$dataBase="artlounge";
-$tableName="usersfile";
-$conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
-
-
+require_once './partial/db.php';
 $cardBlock="";
 $Fetch=false;
 
