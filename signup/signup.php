@@ -2,7 +2,6 @@
 
 require_once '../partial/db.php';
 
-$conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
 
 $userMssg="";
 $userDisplay="none";

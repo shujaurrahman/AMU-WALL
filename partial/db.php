@@ -5,5 +5,4 @@ $passWord="";
 $dataBase="amuwall";
 $conn = mysqli_connect($serverName,$userName,$passWord,$dataBase);
 
-
 ?>

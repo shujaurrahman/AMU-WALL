@@ -13,34 +13,12 @@ else{
   $id="";
 }
 
-echo $id;
-echo $email;
-
-header("Refresh: 10;");
 
 // database connection 
 require_once './partial/db.php';
 $cardBlock="";
 $Fetch=false;
 
-//call this function at top of every page after login
-
-  
-
-  $sql = "SELECT * FROM `alluser` WHERE email = '$email' ";
-                  $result = mysqli_query($conn,$sql);
-                  $aff = mysqli_affected_rows($conn);
-                  if($aff==0){
-                            session_destroy();
-                            header("Location: ./signin/signin.php");
-                      //destroy_session , redirect, show message whatever you want.
-                  }
-                  else{
-                    //do nothing
-                  }
-
-// if($conn==True){
-//   echo"Connection is established"; 
 
  
 
@@ -62,20 +40,6 @@ $Fetch=false;
             $message=$data->{"messgae"};
             $userImage=$data->{"image"};
       
-
-
-            // $cardBlock.="        <div class='cardcontainer'>
-            //                 <div class='photo'> <img src='$path$userImage' alt=''>
-            //                  </div>
-            //                  <div class='content'>
-            // <p class='txt4'>$userName</p>
-            // <p class='txt4'>$email</p>
-            // <p class='txt2'>$message</p>
-            //   </div>";
-//    galat wala upr wala hai card 
-
-
-//   Ye chal rh while loop mein 
 
 
                 $cardBlock.="<div class='card'>
